@@ -1,0 +1,156 @@
+:root {
+  --app-height: 100vh;
+}
+
+@media (max-width: 575.99px) {
+  .contact__top-title h2 {
+    font-size: 25px;
+  }
+
+  .map-container {
+    height: 190px;
+  }
+
+  .contacts-ways a {
+    font-size: 12px;
+  }
+
+  .cnt-main-form {
+    margin-top: 30px;
+  }
+
+  .contact-describ p {
+    font-size: 14px;
+  }
+
+  .cnt-form {
+    background-image: none;
+    /* width: 100%;
+        height: var(--app-height);
+    */
+  }
+}
+
+@media (max-width: 1399.99px) {
+  .cnt-form .container-fluid {
+    background-size: 120%;
+  }
+
+  .contact__top-title {
+    margin-bottom: calc(50px + 6vw);
+  }
+}
+
+@media (max-width: 991.99px) {
+  .cnt-form .container-fluid {
+    background-size: 160%;
+  }
+
+  .cnt-main-form {
+    margin-top: 50px;
+  }
+
+  .contact__social {
+    margin-top: 80px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.99px) {
+  .map-container {
+    height: 190px;
+  }
+
+  .form-container
+    span[class*="form-control"]:not(.form-control-wide):not(.your-message) {
+    width: 50%;
+    float: left;
+  }
+
+  .form-container
+    span[class*="form-control"]:not(.form-control-wide):not(.your-message):nth-child(4n
+      + 1) {
+    padding-right: 8px;
+  }
+
+  .form-container
+    span[class*="form-control"]:not(.form-control-wide):not(.your-message):nth-child(4n
+      -
+      1) {
+    padding-left: 8px;
+  }
+
+  .contact-describ p {
+    font-size: 15px;
+  }
+
+  .cnt-form {
+    background-image: none;
+    /*
+    width: 100%;
+    height: var(--app-height);
+    */
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.99px) {
+  .map-container {
+    height: 190px;
+  }
+
+  .form-container
+    span[class*="form-control"]:not(.form-control-wide):not(.your-message) {
+    width: 50%;
+    float: left;
+  }
+
+  .form-container
+    span[class*="form-control"]:not(.form-control-wide):not(.your-message):nth-child(4n
+      + 1) {
+    padding-right: 8px;
+  }
+
+  .form-container
+    span[class*="form-control"]:not(.form-control-wide):not(.your-message):nth-child(4n - 1) {
+    padding-left: 8px;
+  }
+
+  .cnt-form {
+    width: 100%;
+    height: var(--app-height);
+  }
+
+  .contact__social a {
+    color: rgba(0, 0, 0, 0.623);
+    padding-top: 0px;
+    margin: 12px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .map-container {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 170px;
+    flex: 1 0 170px;
+  }
+
+  .form-container
+    span[class*="form-control"]:not(.form-control-wide):not(.your-message) {
+    width: 50%;
+    float: left;
+  }
+
+  .form-container
+    span[class*="form-control"]:not(.form-control-wide):not(.your-message):nth-child(4n
+      + 1) {
+    padding-right: 8px;
+  }
+
+  .form-container
+    span[class*="form-control"]:not(.form-control-wide):not(.your-message):nth-child(4n
+      -
+      1) {
+    padding-left: 8px;
+  }
+}

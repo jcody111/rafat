@@ -1,0 +1,324 @@
+/* ====================== Intro Animation ====================== */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.intro__background {
+  -webkit-animation: fadeIn 2s linear, intro__background 2s linear;
+          animation: fadeIn 2s linear, intro__background 2s linear;
+}
+
+@-webkit-keyframes intro__background {
+  from {
+    -webkit-transform: scale(1.04);
+            transform: scale(1.04);
+  }
+  to {
+    -webkit-transform: 1;
+            transform: 1;
+  }
+}
+
+@keyframes intro__background {
+  from {
+    -webkit-transform: scale(1.04);
+            transform: scale(1.04);
+  }
+  to {
+    -webkit-transform: 1;
+            transform: 1;
+  }
+}
+
+.v-lines {
+  -webkit-animation: fadeIn 8s linear;
+          animation: fadeIn 8s linear;
+}
+
+.intro__captions .title {
+  display: inline-block;
+  padding-right: 1px;
+  padding-left: 1px;
+  overflow: hidden;
+  letter-spacing: 2px;
+  border-right: 2px solid transparent;
+  white-space: nowrap;
+  -webkit-animation: fadeIn 1.5s steps(1, end), title 3s steps(12, end) 1.5s, blink 0.35s step-end infinite 1.5s, hidden_border 1s linear infinite 4.5s;
+          animation: fadeIn 1.5s steps(1, end), title 3s steps(12, end) 1.5s, blink 0.35s step-end infinite 1.5s, hidden_border 1s linear infinite 4.5s;
+}
+
+@-webkit-keyframes title {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes title {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #777777;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #777777;
+  }
+}
+
+@-webkit-keyframes hidden_border {
+  from,
+  to {
+    border-color: transparent;
+  }
+}
+
+@keyframes hidden_border {
+  from,
+  to {
+    border-color: transparent;
+  }
+}
+
+.intro__captions .sub-title {
+  -webkit-animation: fadeIn 4.7s steps(1, end), sub_title 0.6s linear 4.7s;
+          animation: fadeIn 4.7s steps(1, end), sub_title 0.6s linear 4.7s;
+}
+
+@-webkit-keyframes sub_title {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes sub_title {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.logo {
+  -webkit-animation: fadeIn 5.8s steps(1, end), logo 0.6s linear 5.8s;
+          animation: fadeIn 5.8s steps(1, end), logo 0.6s linear 5.8s;
+}
+
+@-webkit-keyframes logo {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes logo {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.btn-enter {
+  position: relative;
+  -webkit-animation: fadeIn 7s steps(1, end);
+          animation: fadeIn 7s steps(1, end);
+}
+
+.btn-enter::before, .btn-enter::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.btn-enter::before {
+  bottom: 0;
+  left: -1px;
+  border-left: 2px solid #717171;
+  border-top: 2px solid #717171;
+  -webkit-animation: fadeIn 7s steps(1, end), btn_2_up_right 1.5s linear 7s;
+          animation: fadeIn 7s steps(1, end), btn_2_up_right 1.5s linear 7s;
+}
+
+.btn-enter::after {
+  top: 0;
+  right: -1px;
+  border-right: 2px solid #717171;
+  border-bottom: 2px solid #717171;
+  -webkit-animation: fadeIn 8.5s steps(1, end), btn_2_bottom_left 1.5s linear 8.5s;
+          animation: fadeIn 8.5s steps(1, end), btn_2_bottom_left 1.5s linear 8.5s;
+}
+
+@-webkit-keyframes btn_2_up_right {
+  0% {
+    height: 0;
+    width: 0;
+    border-left: 2px solid transparent;
+    border-top: 2px solid transparent;
+  }
+  33.33% {
+    height: 100%;
+    width: 0;
+    border-left: 2px solid #717171;
+    border-top: 2px solid transparent;
+  }
+  100% {
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid #717171;
+    border-top: 2px solid #717171;
+  }
+}
+
+@keyframes btn_2_up_right {
+  0% {
+    height: 0;
+    width: 0;
+    border-left: 2px solid transparent;
+    border-top: 2px solid transparent;
+  }
+  33.33% {
+    height: 100%;
+    width: 0;
+    border-left: 2px solid #717171;
+    border-top: 2px solid transparent;
+  }
+  100% {
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid #717171;
+    border-top: 2px solid #717171;
+  }
+}
+
+@-webkit-keyframes btn_2_bottom_left {
+  0% {
+    height: 0;
+    width: 0;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+  }
+  33.33% {
+    height: 100%;
+    width: 0;
+    border-right: 2px solid #717171;
+    border-bottom: 2px solid transparent;
+  }
+  100% {
+    height: 100%;
+    width: 100%;
+    border-right: 2px solid #717171;
+    border-bottom: 2px solid #717171;
+  }
+}
+
+@keyframes btn_2_bottom_left {
+  0% {
+    height: 0;
+    width: 0;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+  }
+  33.33% {
+    height: 100%;
+    width: 0;
+    border-right: 2px solid #717171;
+    border-bottom: 2px solid transparent;
+  }
+  100% {
+    height: 100%;
+    width: 100%;
+    border-right: 2px solid #717171;
+    border-bottom: 2px solid #717171;
+  }
+}
+
+.btn-title {
+  -webkit-animation: fadeIn 10s steps(1, end), logo 0.6s linear 10s;
+          animation: fadeIn 10s steps(1, end), logo 0.6s linear 10s;
+}
+
+.intro__social {
+  -webkit-animation: fadeIn 11s steps(1, end), intro_social 0.6s linear 11s;
+          animation: fadeIn 11s steps(1, end), intro_social 0.6s linear 11s;
+}
+
+@-webkit-keyframes intro_social {
+  from {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes intro_social {
+  from {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+/*# sourceMappingURL=intro-animation.css.map */

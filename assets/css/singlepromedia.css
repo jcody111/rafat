@@ -1,0 +1,50 @@
+@media (max-width: 575.99px) {
+  .sinpro-main {
+    padding: 0;
+  }
+
+  .sinpro__top-title h1 {
+    font-size: 25px;
+  }
+
+  .nav-item {
+    margin-top: 10px !important;
+  }
+
+  .sinpro__main-title span {
+    font-size: 25px;
+  }
+
+  .sinpro-more {
+    font-size: 20px;
+  }
+
+  .pro-img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .pro-img::before {
+    content: "";
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media (max-width: 1199.99px) {
+  .sinpro-user {
+    width: 260px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 991.99px) {
+  .sinpro-user {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .sinpro-para {
+    font-size: 16px;
+  }
+}

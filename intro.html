@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/intro.css?ver=1.0.2" />
+    <link rel="stylesheet" href="assets/css/intro-animation.css?ver=1.0.2" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <title>Sohrab Rafat</title>
+</head>
+
+<body>
+    <section>
+        <div class="intro__background">
+            <div class="v-lines">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+
+        <div class="intro">
+            <img class="logo" src="assets/images/logo.png" alt="" />
+
+            <div class="intro__captions">
+                <h1 class="title">SOHRAB RAFAT</h1>
+                <p class="sub-title">Architecture</p>
+                <a class="btn-enter" href="home.html"><span class="btn-title">Enter Site</span></a>
+            </div>
+
+            <div class="intro__social">
+                <a href="#" class="fas fa-map-marker-alt"></a>
+                <a href="#" class="fas fa-phone-alt"></a>
+                <a href="#" class="fas fa-envelope"></a>
+                <a href="#" class="fab fa-instagram"></a>
+            </div>            
+        </div>
+    </section>
+
+    <script>
+        const appHeight = () => {
+            const doc = document.documentElement
+            doc.style.setProperty('--app-height', `${window.innerHeight}px`)
+        }
+        window.addEventListener('resize', appHeight)
+        appHeight()
+    </script>
+</body>
+
+</html>

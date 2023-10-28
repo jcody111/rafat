@@ -1,0 +1,42 @@
+@media (max-width: 575.99px) {
+  .about__top-title span {
+    font-size: 10px;
+  }
+
+  .about__top-title h2 {
+    font-size: 25px;
+  }
+
+  .para-line-three,
+  .para-line-two,
+  .para-line-four {
+    color: rgb(75, 75, 75);
+    font-size: 15px;
+  }
+
+  .awards-titles h4 {
+    font-size: 30px;
+  } 
+
+  .awards-about {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 991.99px) {
+  .about__captions {
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.99px) {
+  .awards-about {
+    margin-top: 150px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .about__top-title {
+    margin-bottom: calc(50px + 5vw);
+  }
+}

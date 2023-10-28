@@ -1,0 +1,97 @@
+/* --------------------- iranyekan ---------------------- */
+@font-face {
+  font-family: "iranyekan";
+  font-weight: 300;
+  src: url("../fonts/iranyekan/light.eot");
+  src: url("../fonts/iranyekan/light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/iranyekan/light.woff2") format("woff2"),
+    url("../fonts/iranyekan/light.woff") format("woff"),
+    url("../fonts/iranyekan/light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "iranyekan";
+  font-weight: normal;
+  src: url("../fonts/iranyekan/regular.eot");
+  src: url("../fonts/iranyekan/regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/iranyekan/regular.woff2") format("woff2"),
+    url("../fonts/iranyekan/regular.woff") format("woff"),
+    url("../fonts/iranyekan/regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "iranyekan";
+  font-weight: 700;
+  src: url("../fonts/iranyekan/bold.eot");
+  src: url("../fonts/iranyekan/bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/iranyekan/bold.woff2") format("woff2"),
+    url("../fonts/iranyekan/bold.woff") format("woff"),
+    url("../fonts/iranyekan/bold.ttf") format("truetype");
+}
+
+body {
+  text-align: right;
+  font-family: "iranyekan";
+}
+
+.owl-carousel .home__background {
+  direction: rtl;
+}
+
+header {
+  direction: ltr;
+}
+
+header .main__side ul {
+  direction: rtl;
+}
+
+header .noghteh__chin {
+  right: 0;
+  direction: rtl;
+}
+
+.home__captions .caption {
+  line-height: 1.55;
+}
+
+@media screen and (min-width: 768px) {
+  .single__tags + .single__contacts {
+    border-left: 0;
+    border-right: 1px solid #c3c3c3;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .single__img {
+    padding-right: 35px;
+    float: left;
+  }
+}
+
+.contacts-ways a,
+.contacts-ways p {
+  padding-right: 15px;
+  padding-left: unset;
+}
+
+::placeholder {
+  text-align: right;
+}
+
+.form-container [type="submit"],
+.form-container [type="button"],
+.form-container button {
+  left: 14px;
+  right: unset;
+}
+
+.form-container .ajax-loader {
+    right: unset;
+    left: 0;
+}
+
+#lang-switcher ul .lang-item a {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
